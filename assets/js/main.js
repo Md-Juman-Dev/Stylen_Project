@@ -6,28 +6,20 @@ $(document).ready(function () {
   });
 
   // Close menu by button
-  $('.closeBtn').click(function () {
+  $('.closeBtn,.overlay-menu').click(function () {
     $('.mobile_menu').removeClass('active');
     $('.overlay-menu').fadeOut();
-  });
-
-  // Close menu by clicking on overlay-menu
-  $('.overlay-menu').click(function () {
-    $('.mobile_menu').removeClass('active');
-    $(this).fadeOut();
   });
 
   $('.sub-menu-arrow').click(function () {
     const currentSubmenu = $(this).closest('li').find('.sub-menu-mobole');
     const currentArrow = $(this);
-
     // Close other submenus and remove rotate from other arrows
     $('.sub-menu-mobole')
       .not(currentSubmenu)
       .slideUp(200)
       .removeClass('active');
     $('.sub-menu-arrow').not(currentArrow).removeClass('rotate');
-
     // Toggle current submenu and rotate arrow
     currentSubmenu.slideToggle(200).toggleClass('active');
     currentArrow.toggleClass('rotate');
@@ -46,13 +38,17 @@ $(document).ready(function () {
     $('.wishlist-popup').addClass('active');
     $('.wishlist-overlay').fadeIn();
   });
-  $('.wishlist-close').click(function () {
+  $('.wishlist-close,.wishlist-overlay').click(function () {
     $('.wishlist-popup').removeClass('active');
     $('.wishlist-overlay').fadeOut();
   });
-  $('.wishlist-overlay').click(function () {
-    $('.wishlist-popup').removeClass('active');
-    $(this).fadeOut();
+
+  // Search Slider
+  $('.search-icon').click(function () {
+    $('.search-slider').addClass('active');
+  });
+  $('.serch-close').click(function () {
+    $('.search-slider').removeClass('active');
   });
 
   // Open Cart Slider
@@ -103,4 +99,16 @@ $(document).ready(function () {
       `${$('.cart-item').length} ITEM${$('.cart-item').length > 1 ? 'S' : ''}`
     );
   }
+
+  // Initialize Swiper
+  var swiper = new Swiper('.mySwiper', {
+    pagination: {
+      el: '.swiper-pagination',
+      dynamicBullets: true,
+    },
+    autoplay: {
+      delay: 3000, // Delay between transitions (in ms)
+      disableOnInteraction: false, // Keeps autoplay running even after user interaction
+    },
+  });
 });

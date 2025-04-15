@@ -57,7 +57,11 @@ header {
   left: 0;
   width: 100%;
   background-color: var(--whiteColor);
+  border-bottom: 1px solid var(--shadow);
   z-index: 9999;
+}
+nav{
+    border-bottom: 1px solid var(--shadow);
 }
 header .logo img {
   width: 250px;
@@ -300,11 +304,7 @@ header ul {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--whiteColor);
-  z-index: 9999;
-  border-bottom: 2px solid var(--shadow);
+width: 100%;
 }
 .menu-icon .menuBtn {
   font-size: 40px;
@@ -325,7 +325,8 @@ header ul {
   top: 0;
   left: 0;
   background-color: var(--whiteColor);
-  width: 50%;
+  width: 100%;
+  max-width: 370px;
   height: 100vh;
   padding: 10px 15px 10px 0;
   border-bottom: 2px solid var(--shadow);
@@ -410,7 +411,7 @@ header ul {
   max-width: 1000px;
   height: 70vh;
   padding: 40px;
-  background-color: var(--HoverBackground);
+  background-color: var(--textColor2);
   z-index: 99999;
   display: none;
   transition: transform 0.3s ease-in-out;
@@ -474,6 +475,7 @@ header ul {
 .mobile-footer {
   font-size: 12px;
   color: var(--textColor2);
+  cursor: pointer;
 }
 
 .mobile-footer .iconify-icon {
@@ -791,3 +793,113 @@ header ul {
   border: 1px solid var(--textColor2);
   border-radius: 10px;
 }
+
+/* Search Slider design */
+.search-slider{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%,40px);
+    width: 90%;
+    max-width: 400px;
+    background: var(--whiteColor);
+    z-index: 9999;
+    visibility: hidden;
+    opacity: 0;
+    transition: transform .3s;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+
+}
+.search-slider.active{
+    transform: translate(-50%,0);
+    visibility: visible;
+    opacity: 1;
+   
+}
+.search-slider .serch-close{
+    position: absolute;
+    top: -10px;
+    right: 2px;
+    font-size: 30px;
+    color: var(--textColor2);
+    cursor: pointer;
+}
+.search-body{
+    padding: 15px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.search-body .search-box {
+    width: 90%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    border: 1px solid var(--textColor2);
+    border-radius: 30px;
+}
+.search-body .search-box input{
+    width: 100%;
+    outline: none;
+    border: 0;
+}
+.search-body input::placeholder{
+    color: var(--textColor2);
+    font-size: 14px;
+    font-weight: 300;
+}
+.search-body input:focus{
+    border-bottom: 1px solid var(--textColor2);
+}
+
+
+.search-body button{
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: var(--textColor2);
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+
+/** ----------------Header design end----------------- */
+
+/* *swiper js start */
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .banner{
+        margin-top: 100px;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
