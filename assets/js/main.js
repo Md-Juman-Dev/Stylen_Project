@@ -164,4 +164,30 @@ $(document).ready(function () {
 
   // Init background of zoom
   zoomResult.css("background-image", `url(${mainImage.attr("src")})`);
+
+
+  $('.qty-btn.plus').click(function () {
+    let input = $(this).siblings('.qty-input');
+    let currentVal = parseInt(input.val());
+    let max = parseInt(input.attr('max')) || 5;
+    if (currentVal < max) {
+      input.val(currentVal + 1);
+    }
+  });
+
+  $('.qty-btn.minus').click(function () {
+    let input = $(this).siblings('.qty-input');
+    let currentVal = parseInt(input.val());
+    let min = parseInt(input.attr('min')) || 1;
+    if (currentVal > min) {
+      input.val(currentVal - 1);
+    }
+  });
+  $('.open_quick_view').click(function (e) {
+    e.preventDefault(); // Stop anchor from jumping to top
+    $('.quick_view_modal_overlay').fadeIn();
+  });
+  $('.modal_close_btn').click(function () {
+    $('.quick_view_modal_overlay').fadeOut();
+  });
 });
