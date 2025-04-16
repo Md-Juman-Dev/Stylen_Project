@@ -111,4 +111,57 @@ $(document).ready(function () {
       disableOnInteraction: false, // Keeps autoplay running even after user interaction
     },
   });
+
+  // product details page image
+  const mainImage = $("#main-image");
+  const zoomResult = $("#zoom-result");
+  const zoomLens = $("#zoom-lens");
+
+  function getCursorPos(e) {
+      const img = mainImage[0];
+      const rect = img.getBoundingClientRect();
+      const x = e.pageX - rect.left - window.scrollX;
+      const y = e.pageY - rect.top - window.scrollY;
+      return { x, y };
+  }
+
+  function moveLens(e) {
+      const pos = getCursorPos(e);
+      let x = pos.x - zoomLens.width() / 2;
+      let y = pos.y - zoomLens.height() / 2;
+
+      // Boundary checks
+      if (x < 0) x = 0;
+      if (y < 0) y = 0;
+      if (x > mainImage.width() - zoomLens.width()) x = mainImage.width() - zoomLens.width();
+      if (y > mainImage.height() - zoomLens.height()) y = mainImage.height() - zoomLens.height();
+
+      zoomLens.css({ left: x + 'px', top: y + 'px' });
+
+      // Set background of zoom result
+      zoomResult.css('background-position', `-${x * 2}px -${y * 2}px`);
+  }
+
+  $(".thumb-img").click(function () {
+      const newSrc = $(this).attr("src");
+      $(".thumb-img").removeClass("active");
+      $(this).addClass("active");
+
+      mainImage.attr("src", newSrc);
+      zoomResult.css("background-image", `url(${newSrc})`);
+  });
+
+  mainImage.on("mousemove", function (e) {
+      zoomLens.show();
+      zoomResult.show();
+      moveLens(e);
+  });
+
+  mainImage.on("mouseleave", function () {
+      zoomLens.hide();
+      zoomResult.hide();
+  });
+
+  // Init background of zoom
+  zoomResult.css("background-image", `url(${mainImage.attr("src")})`);
 });
