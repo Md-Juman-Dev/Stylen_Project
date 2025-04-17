@@ -5,6 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stylen - Home</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+        rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -116,7 +122,6 @@
                                             <li><a href="#"> Joggers</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Shirt</a></li>
                                     <li class="dropdown">
                                         <a href="#">
                                             Accessories
@@ -248,7 +253,6 @@
                                 <li><a href="#"> Casual Print Shirt</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">SHIRT</a></li>
                         <li><a href="#">POLO SHIRT</a></li>
                         <li>
                             <div class="d-flex align-items-center justify-content-between">
@@ -395,50 +399,644 @@
                     </div>
                 </div>
                 <!--* Search slider  -->
+                <div class="search-overlay"></div>
                 <div class="search-slider">
-                    <div class="search-body">
+                    <div class="search-body d-flex align-items-center justify-content-between">
                         <div class="search-box">
                             <input type="text" placeholder="Search for products . . ." />
                         </div>
-                        <button class="search-btn">
-                            <iconify-icon icon="ri:search-line"></iconify-icon>
-                        </button>
+                        <div class="search-btn">
+                            <button>
+                                <iconify-icon icon="ri:search-line"></iconify-icon>
+                            </button>
+                        </div>
                     </div>
-                    <div class="serch-close">
+                    <!-- <div class="serch-close">
                         <span class="iconify-icon">
                             <iconify-icon icon="material-symbols:close"></iconify-icon>
                         </span>
-                    </div>
+                    </div> -->
                 </div>
             </nav>
         </div>
     </header>
 
     <main>
+        <!-- Banner Section -->
         <section id="banner" class="banner">
             <div class="container-fluid">
-                <div class="swiper mySwiper">
+                <div class="swiper bannerSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img class="img-fluid" src="./assets/images/banner-1.png" alt="">
+                            <img class="" src="./assets/images/banner-1.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img class="img-fluid" src="./assets/images/banner-2.png" alt="">
+                            <img class="" src="./assets/images/banner-2.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img class="img-fluid" src="./assets/images/banner-3.png" alt="">
+                            <img class="" src="./assets/images/banner-3.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img class="img-fluid" src="./assets/images/banner-4.png" alt="">
+                            <img class="" src="./assets/images/banner-4.png" alt="">
                         </div>
                         <div class="swiper-slide">
-                            <img class="img-fluid" src="./assets/images/banner-5.png" alt="">
+                            <img class="" src="./assets/images/banner-5.png" alt="">
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
+        <!-- Our Services Section  -->
+        <section id="services" class="services d-lg-block d-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="service-box">
+                            <div class="text-center">
+                                <iconify-icon icon="mdi:truck-fast-outline"></iconify-icon>
+                                <h6>Free Shipping</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="service-box">
+                            <div class="text-center">
+                                <iconify-icon icon="mynaui:package-solid"></iconify-icon>
+                                <h6>Money Return</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="service-box">
+                            <div class="text-center">
+                                <iconify-icon icon="mdi:medal-outline"></iconify-icon>
+                                <h6>Support 24/7</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-6">
+                        <div class="service-box">
+                            <div class="text-center">
+                                <iconify-icon icon="vaadin:headset"></iconify-icon>
+                                <h6>Secure Payment</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Browse our categories -->
+        <section class="categoris">
+            <div class="container">
+                <div class="categoriesTitle text-center">
+                    <h4>Browse Our Categories</h4>
+                    <div class="borders"></div>
+                </div>
+                <div class="swiper categoriesSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="slide-card">
+                                    <img class="" src="./assets/images/Categorie/categories-1.png" alt="">
+                                    <div class="label text-center">SHIRT</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="slide-card">
+                                    <img src="./assets/images/Categorie/categories-2.png" alt="">
+                                    <div class="label">RIB DROP SHOULDER</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="slide-card">
+                                    <img src="./assets/images/Categorie/categories-3.png" alt="">
+                                    <div class="label">POLO SHIRT</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="slide-card">
+                                    <img src="./assets/images/Categorie/categories-4.png" alt="">
+                                    <div class="label">PREMIUM T-SHIRT </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <div class="slide-card">
+                                    <img src="./assets/images/Categorie/categories-5.png" alt="">
+                                    <div class="label">PREMIUM T-SHIRT</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev custom-nav">
+                        <iconify-icon icon="mdi:chevron-left"></iconify-icon>
+                    </div>
+                    <div class="swiper-button-next custom-nav">
+                        <iconify-icon icon="mdi:chevron-right"></iconify-icon>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Best Selling Products -->
+        <section class="bestSelling">
+            <div class="container">
+                <div class="title text-lg-center">
+                    <h4>Best Selling Products </h4>
+                    <a class="text-end" href="#">View All</a>
+                    <div class="borders"></div>
+                </div>
+                <div class="swiper bestSellingSwiper mt-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product mb-4">
+                                <div class="product_image">
+                                    <a href="#" class="primary_product_image">
+                                        <img src="./assets/images/product/product1/product-1.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                    <a href="#" class="second_product_image">
+                                        <img src="./assets/images/product/product1/product-2.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_details">
+                                    <h4>Manfare ELITE Quality Panjabi I MP-229</h4>
+                                    <p>TK. 2990 <span>TK. 3750</span></p>
+                                    <div class="button d-flex justify-content-center">
+                                        <a href="#" class="open_quick_view">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product mb-4">
+                                <div class="product_image">
+                                    <a href="#" class="primary_product_image">
+                                        <img src="./assets/images/product/product1/product-1.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                    <a href="#" class="second_product_image">
+                                        <img src="./assets/images/product/product1/product-2.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_details">
+                                    <h4>Manfare ELITE Quality Panjabi I MP-229</h4>
+                                    <p>TK. 2990 <span>TK. 3750</span></p>
+                                    <div class="button d-flex justify-content-center">
+                                        <a href="#" class="open_quick_view">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product mb-4">
+                                <div class="product_image">
+                                    <a href="#" class="primary_product_image">
+                                        <img src="./assets/images/product/product1/product-1.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                    <a href="#" class="second_product_image">
+                                        <img src="./assets/images/product/product1/product-2.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_details">
+                                    <h4>Manfare ELITE Quality Panjabi I MP-229</h4>
+                                    <p>TK. 2990 <span>TK. 3750</span></p>
+                                    <div class="button d-flex justify-content-center">
+                                        <a href="#" class="open_quick_view">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product mb-4">
+                                <div class="product_image">
+                                    <a href="#" class="primary_product_image">
+                                        <img src="./assets/images/product/product1/product-1.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                    <a href="#" class="second_product_image">
+                                        <img src="./assets/images/product/product1/product-2.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_details">
+                                    <h4>Manfare ELITE Quality Panjabi I MP-229</h4>
+                                    <p>TK. 2990 <span>TK. 3750</span></p>
+                                    <div class="button d-flex justify-content-center">
+                                        <a href="#" class="open_quick_view">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product mb-4">
+                                <div class="product_image">
+                                    <a href="#" class="primary_product_image">
+                                        <img src="./assets/images/product/product1/product-1.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                    <a href="#" class="second_product_image">
+                                        <img src="./assets/images/product/product1/product-2.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_details">
+                                    <h4>Manfare ELITE Quality Panjabi I MP-229</h4>
+                                    <p>TK. 2990 <span>TK. 3750</span></p>
+                                    <div class="button d-flex justify-content-center">
+                                        <a href="#" class="open_quick_view">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product mb-4">
+                                <div class="product_image">
+                                    <a href="#" class="primary_product_image">
+                                        <img src="./assets/images/product/product1/product-1.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                    <a href="#" class="second_product_image">
+                                        <img src="./assets/images/product/product1/product-2.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_details">
+                                    <h4>Manfare ELITE Quality Panjabi I MP-229</h4>
+                                    <p>TK. 2990 <span>TK. 3750</span></p>
+                                    <div class="button d-flex justify-content-center">
+                                        <a href="#" class="open_quick_view">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product mb-4">
+                                <div class="product_image">
+                                    <a href="#" class="primary_product_image">
+                                        <img src="./assets/images/product/product1/product-1.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                    <a href="#" class="second_product_image">
+                                        <img src="./assets/images/product/product1/product-2.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_details">
+                                    <h4>Manfare ELITE Quality Panjabi I MP-229</h4>
+                                    <p>TK. 2990 <span>TK. 3750</span></p>
+                                    <div class="button d-flex justify-content-center">
+                                        <a href="#" class="open_quick_view">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product mb-4">
+                                <div class="product_image">
+                                    <a href="#" class="primary_product_image">
+                                        <img src="./assets/images/product/product1/product-1.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                    <a href="#" class="second_product_image">
+                                        <img src="./assets/images/product/product1/product-2.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_details">
+                                    <h4>Manfare ELITE Quality Panjabi I MP-229</h4>
+                                    <p>TK. 2990 <span>TK. 3750</span></p>
+                                    <div class="button d-flex justify-content-center">
+                                        <a href="#" class="open_quick_view">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Best Selling Products -->
+        <section class="bestSelling">
+            <div class="container">
+                <div class="title text-lg-center">
+                    <h4>New Arrival Products </h4>
+                    <a class="text-end" href="#">Cee All</a>
+                    <div class="borders"></div>
+                </div>
+                <div class="swiper newArrivalsSwiper mt-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product mb-4">
+                                <div class="product_image">
+                                    <a href="#" class="primary_product_image">
+                                        <img src="./assets/images/product/product1/product-1.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                    <a href="#" class="second_product_image">
+                                        <img src="./assets/images/product/product1/product-2.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_details">
+                                    <h4>Manfare ELITE Quality Panjabi I MP-229</h4>
+                                    <p>TK. 2990 <span>TK. 3750</span></p>
+                                    <div class="button d-flex justify-content-center">
+                                        <a href="#" class="open_quick_view">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product mb-4">
+                                <div class="product_image">
+                                    <a href="#" class="primary_product_image">
+                                        <img src="./assets/images/product/product1/product-1.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                    <a href="#" class="second_product_image">
+                                        <img src="./assets/images/product/product1/product-2.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_details">
+                                    <h4>Manfare ELITE Quality Panjabi I MP-229</h4>
+                                    <p>TK. 2990 <span>TK. 3750</span></p>
+                                    <div class="button d-flex justify-content-center">
+                                        <a href="#" class="open_quick_view">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product mb-4">
+                                <div class="product_image">
+                                    <a href="#" class="primary_product_image">
+                                        <img src="./assets/images/product/product1/product-1.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                    <a href="#" class="second_product_image">
+                                        <img src="./assets/images/product/product1/product-2.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_details">
+                                    <h4>Manfare ELITE Quality Panjabi I MP-229</h4>
+                                    <p>TK. 2990 <span>TK. 3750</span></p>
+                                    <div class="button d-flex justify-content-center">
+                                        <a href="#" class="open_quick_view">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product mb-4">
+                                <div class="product_image">
+                                    <a href="#" class="primary_product_image">
+                                        <img src="./assets/images/product/product1/product-1.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                    <a href="#" class="second_product_image">
+                                        <img src="./assets/images/product/product1/product-2.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_details">
+                                    <h4>Manfare ELITE Quality Panjabi I MP-229</h4>
+                                    <p>TK. 2990 <span>TK. 3750</span></p>
+                                    <div class="button d-flex justify-content-center">
+                                        <a href="#" class="open_quick_view">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product mb-4">
+                                <div class="product_image">
+                                    <a href="#" class="primary_product_image">
+                                        <img src="./assets/images/product/product1/product-1.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                    <a href="#" class="second_product_image">
+                                        <img src="./assets/images/product/product1/product-2.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_details">
+                                    <h4>Manfare ELITE Quality Panjabi I MP-229</h4>
+                                    <p>TK. 2990 <span>TK. 3750</span></p>
+                                    <div class="button d-flex justify-content-center">
+                                        <a href="#" class="open_quick_view">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product mb-4">
+                                <div class="product_image">
+                                    <a href="#" class="primary_product_image">
+                                        <img src="./assets/images/product/product1/product-1.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                    <a href="#" class="second_product_image">
+                                        <img src="./assets/images/product/product1/product-2.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_details">
+                                    <h4>Manfare ELITE Quality Panjabi I MP-229</h4>
+                                    <p>TK. 2990 <span>TK. 3750</span></p>
+                                    <div class="button d-flex justify-content-center">
+                                        <a href="#" class="open_quick_view">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product mb-4">
+                                <div class="product_image">
+                                    <a href="#" class="primary_product_image">
+                                        <img src="./assets/images/product/product1/product-1.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                    <a href="#" class="second_product_image">
+                                        <img src="./assets/images/product/product1/product-2.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_details">
+                                    <h4>Manfare ELITE Quality Panjabi I MP-229</h4>
+                                    <p>TK. 2990 <span>TK. 3750</span></p>
+                                    <div class="button d-flex justify-content-center">
+                                        <a href="#" class="open_quick_view">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="product mb-4">
+                                <div class="product_image">
+                                    <a href="#" class="primary_product_image">
+                                        <img src="./assets/images/product/product1/product-1.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                    <a href="#" class="second_product_image">
+                                        <img src="./assets/images/product/product1/product-2.png" alt=""
+                                            class="img-fluid">
+                                    </a>
+                                </div>
+                                <div class="product_details">
+                                    <h4>Manfare ELITE Quality Panjabi I MP-229</h4>
+                                    <p>TK. 2990 <span>TK. 3750</span></p>
+                                    <div class="button d-flex justify-content-center">
+                                        <a href="#" class="open_quick_view">Add To Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- Quick View Modal -->
+        <div class="container">
+            <div class="quick_view_modal_overlay">
+                <div class="modal_quick_view">
+                    <div class="modal_top_bar">
+                        <h3>Quick View</h3>
+                        <button class="modal_close_btn">&times;</button>
+                    </div>
+
+                    <div class="modal_body">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="row">
+                                    <!-- Thumbnail Images -->
+                                    <div class="col-lg-4 col-12 d-flex justify-content-center order-1 order-lg-0">
+                                        <div class="thumbnail-container row row-lg-none">
+                                            <img class="thumb-img"
+                                                src="./assets/images/product/product1/174059292812961293939_mp_229_1.webp"
+                                                alt="">
+                                            <img class="thumb-img"
+                                                src="./assets/images/product/product1/174059293809120138676_mp_229_2.webp"
+                                                alt="">
+                                            <img class="thumb-img"
+                                                src="./assets/images/product/product1/174059294643128861525_mp_229_3.webp"
+                                                alt="">
+                                            <img class="thumb-img"
+                                                src="./assets/images/product/product1/174059295318276225723_mp_229_4.webp"
+                                                alt="">
+                                        </div>
+                                    </div>
+
+                                    <!-- Main Image + Zoom -->
+                                    <div class="col-lg-8 col-12 order-0 order-lg-1">
+                                        <div class="main-image-wrapper">
+                                            <img id="main-image" class="zoomable"
+                                                src="./assets/images/product/product1/174059292812961293939_mp_229_1.webp"
+                                                alt="">
+                                            <div id="zoom-lens" class="zoom-lens"></div>
+                                            <div id="zoom-result" class="zoom-result"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="product_details_modal">
+                                    <h4>Manfare ELITE Quality Panjabi I MP-229</h4>
+                                    <p>TK. 2990 <span>TK. 3750</span></p>
+                                    <div class="modal_product_review">
+                                        <div class="d-flex">
+                                            <p>0</p>
+                                            <span class="iconify-icon">
+                                                <iconify-icon icon="typcn:star"></iconify-icon>
+                                            </span>
+                                            <p>| 0 Reviews</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal_details_line d-none d-lg-block"></div>
+                                <div class="modal_product_color">
+                                    <div class="color_name d-flex">
+                                        <h5>COLOR:</h5> <span>Black</span>
+                                    </div>
+                                    <div class="color_image">
+                                        <img class="thumb-img"
+                                            src="./assets/images/product/product1/174059293809120138676_mp_229_2.webp"
+                                            alt="">
+                                    </div>
+                                </div>
+
+                                <div class="modal_product_size">
+                                    <div class="modal_size_name d-flex">
+                                        <h5>Size:</h5>
+                                        <div class="size d-flex">
+                                            <div class="size_btn active">
+                                                <a href="#">L</a>
+                                            </div>
+                                            <div class="size_btn">
+                                                <a href="#">XL</a>
+                                            </div>
+                                            <div class="size_btn">
+                                                <a href="#">XXL</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="available">
+                                        <p>4 Available</p>
+                                    </div>
+                                </div>
+                                <div class="modal_details_line d-none d-lg-block"></div>
+                                <div class="modal_action_btns d-flex">
+                                    <div class="modal_product_quantity">
+                                        <button class="qty-btn minus">-</button>
+                                        <input type="number" class="qty-input" value="1" min="1" max="5" readonly>
+                                        <button class="qty-btn plus">+</button>
+                                    </div>
+                                    <div class="modal_product_add_to_cart">
+                                        <a href="">Add To Cart</a>
+                                    </div>
+                                    <div class="modal_product_buy">
+                                        <a href="">Buy Now</a>
+                                    </div>
+                                </div>
+
+                                <div class="modal_whishlist">
+                                    <a href="">
+                                        <div class="d-flex">
+                                            <span class="iconify-icon">
+                                                <iconify-icon
+                                                    icon="material-symbols-light:bookmark-heart-outline-rounded"></iconify-icon>
+                                            </span>
+                                            <p>ADD TO WISHLIST</p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="modal_product_full_details">
+                                    <div class="text-end">
+                                        <div class="btn">
+                                            <a href="">View Full Product Details >></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
