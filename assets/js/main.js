@@ -155,7 +155,6 @@ $(document).ready(function () {
   var swiper = new Swiper('.bestSellingSwiper', {
     slidesPerView: 3,
     spaceBetween: 30,
-    loop: true,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
@@ -165,6 +164,10 @@ $(document).ready(function () {
       el: '.swiper-pagination',
       clickable: true,
     },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     breakpoints: {
       // Small mobile
       320: {
@@ -184,7 +187,7 @@ $(document).ready(function () {
       // Large screens
       1280: {
         slidesPerView: 4,
-        spaceBetween: 30,
+        spaceBetween: 25,
       },
     },
   });
@@ -192,15 +195,18 @@ $(document).ready(function () {
   var swiper = new Swiper('.newArrivalsSwiper', {
     slidesPerView: 3,
     spaceBetween: 30,
-    loop: true,
     autoplay: {
       delay: 2000,
       disableOnInteraction: false,
     },
-    freeMode: true,
+    freeMode: false,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
     breakpoints: {
       // Small mobile
@@ -221,7 +227,87 @@ $(document).ready(function () {
       // Large screens
       1280: {
         slidesPerView: 4,
+        spaceBetween: 25,
+      },
+    },
+  });
+
+  // Premium Shirts Swiper
+  var swiper = new Swiper('.premiumShirtsSwiper', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 2300,
+      disableOnInteraction: false,
+    },
+    freeMode: false,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      // Small mobile
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // Tablets
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // Desktops
+      1024: {
+        slidesPerView: 3,
         spaceBetween: 30,
+      },
+      // Large screens
+      1280: {
+        slidesPerView: 4,
+        spaceBetween: 25,
+      },
+    },
+  });
+  var swiper = new Swiper('.luxuryPanjabiSwiper', {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 2300,
+      disableOnInteraction: false,
+    },
+    freeMode: false,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      // Small mobile
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // Tablets
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // Desktops
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      // Large screens
+      1280: {
+        slidesPerView: 3,
+        spaceBetween: 20,
       },
     },
   });

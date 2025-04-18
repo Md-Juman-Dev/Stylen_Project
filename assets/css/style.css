@@ -31,6 +31,7 @@ body {
   scroll-behavior: smooth;
   position: relative;
   height: 100%;
+  background-color: var(--whiteColor);
 }
 
 :root {
@@ -50,7 +51,7 @@ body {
 
 /* Header CSS start */
 header {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -512,7 +513,7 @@ header ul {
 
 /* Wishlist Popup Base */
 .wishlist-popup {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
@@ -555,6 +556,7 @@ header ul {
   border-bottom: 1px solid #eee;
   background-color: #f8f9fa;
   background-color: var(--shadow);
+  border-radius: 10px 0 0 0;
 }
 
 .wishlist-popup .header h4 {
@@ -945,7 +947,6 @@ header ul {
   width: 100%;
   height: 100%;
   position: relative;
-  margin-top: 154px;
 }
 
 /* Services section  */
@@ -1026,7 +1027,7 @@ header ul {
   margin-right: 15px !important;
 }
 
-.categoris .custom-nav {
+.custom-nav {
   width: 40px;
   height: 40px;
   background: white;
@@ -1039,11 +1040,11 @@ header ul {
   z-index: 10;
 }
 
-.categoris .custom-nav iconify-icon {
-  font-size: 24px;
+.custom-nav iconify-icon {
+  font-size: 30px;
 }
-.categoris .swiper-button-next::after,
-.categoris .swiper-button-prev::after {
+.swiper-button-next::after,
+.swiper-button-prev::after {
   display: none;
 }
 
@@ -1089,6 +1090,7 @@ header ul {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   height: auto;
   padding-bottom: 15px;
+  background-color: var(--whiteColor);
 }
 .bestSelling .swiper-slide {
   border-radius: 10px;
@@ -1138,7 +1140,95 @@ header ul {
   background: #bb9b82;
   color: #fff;
 }
+/* Product Card End */
 
+/* Product Video Design */
+.product-video {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.product-video .col-lg-6 {
+  padding: 0 7px;
+}
+.product-video iframe {
+  width: 100%;
+  height: 400px;
+}
+.product-video h6 {
+  text-transform: uppercase;
+  font-family: var(--third);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--textColor);
+  margin-bottom: 10px;
+}
+
+/* Featured Banner Design */
+.featured-banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 40px 0;
+}
+.featured-banner .container {
+  padding: 0;
+}
+/* Premium Shirts design  */
+.premiumShirts {
+  padding-bottom: 35px;
+}
+.messege {
+  background-image: url(../images/banners/massege-bg.png);
+  min-height: 110%;
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+.messege .messege-logo img {
+  width: 250px;
+  margin: 10px 0;
+}
+.messege .messege-content {
+  width: 100%;
+  max-width: 650px;
+  background: var(--shadow);
+  padding: 20px 50px;
+  border-radius: 20px;
+}
+.messege .messege-content p {
+  text-align: center;
+  font-family: var(--primary);
+  color: var(--textColor2);
+  line-height: 24px;
+  font-size: 16px;
+}
+/* Luxury Panjabi Design*/
+.luxury-panjabi {
+  margin-top: 50px;
+  height: 100vh;
+}
+.luxury-panjabi .panjabi-box {
+  background-color: var(--shadow);
+  border-radius: 5px;
+}
+.luxury-panjabi .panjabi-box img {
+  border-radius: 5px 0 0 5px;
+}
+.luxuryPanjabiSwiper {
+  margin-right: 30px;
+}
+.luxuryPanjabiSwiper .swiper-wrapper {
+  margin-top: 23px;
+}
+.product_image {
+  overflow: hidden !important;
+}
 /**---------------------- Shop Page ------------------- css */
 .shop {
   margin-top: 170px;

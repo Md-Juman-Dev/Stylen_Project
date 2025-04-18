@@ -202,4 +202,14 @@
     transform: translateX(0);
     width: 169px;
   }
+
+  .product-video iframe {
+    height: 270px;
+  }
+  .featured-banner {
+    margin: 4px 0;
+  }
+  .featured-banner .container {
+    padding: 7px;
+  }
 }
