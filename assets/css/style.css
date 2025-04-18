@@ -1854,6 +1854,9 @@ input[type='checkbox']:checked {
 .detail_bread-cumb {
   margin-top: 35px;
 }
+.luxuryPanjabiSwiper .product_image{
+  height: 200px;
+}
 
 @media screen and (max-width: 991px) {
   .zoom-result {
