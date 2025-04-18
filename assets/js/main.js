@@ -64,7 +64,6 @@ $(document).ready(function () {
     $('.cart-slider').removeClass('active');
     $('.cart-overlay').fadeOut();
   });
-
   // Quantity Up
   $('.qty-up').click(function () {
     const input = $(this).siblings('.qty-value');
@@ -72,7 +71,6 @@ $(document).ready(function () {
     input.val(val + 1);
     updateTotal();
   });
-
   // Quantity Down
   $('.qty-down').click(function () {
     const input = $(this).siblings('.qty-value');
@@ -82,18 +80,16 @@ $(document).ready(function () {
       updateTotal();
     }
   });
-
   // Remove item
   $('.remove-item').click(function () {
     $(this).closest('.cart-item').remove();
     updateTotal();
   });
-
   function updateTotal() {
     let total = 0;
     $('.cart-item').each(function () {
       const qty = parseInt($(this).find('.qty-value').val());
-      const price = 990; // Set this dynamically if needed
+      const price = 990;
       total += qty * price;
     });
     $('.total').html(` ${total}`);
@@ -107,207 +103,98 @@ $(document).ready(function () {
     pagination: {
       el: '.swiper-pagination',
     },
-  });
-
-  //browse our categories Swiper
-  var swiper = new Swiper('.categoriesSwiper', {
-    slidesPerView: 3,
-    spaceBetween: 30,
     loop: true,
     autoplay: {
       delay: 3000,
       disableOnInteraction: false,
     },
-    freeMode: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  });
+  //browse our categories Swiper
+  var swiper = new Swiper(
+    '.categoriesSwiper, .premiumTshirtSwiper, .luxuryPanjabiSwiper, .premiumShirtsSwiper, .newArrivalsSwiper, .bestSellingSwiper, .reviewSwiper',
+    {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      loop: true,
+      freeMode: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1280: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
+    }
+  );
+  var swiper = new Swiper('.reviewSwiper', {
+    slidesPerView: 1,
     breakpoints: {
-      // when window width is >= 320px
       320: {
         slidesPerView: 1,
         spaceBetween: 10,
       },
-      // when window width is >= 640px
-      640: {
+      480: {
         slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      640: {
+        slidesPerView: 3,
         spaceBetween: 20,
       },
-      // when window width is >= 1024px
       1024: {
         slidesPerView: 3,
         spaceBetween: 30,
       },
-      // when window width is >= 1280px
       1280: {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 30,
       },
     },
   });
-
-  // Best Selling Products Swiper
-  var swiper = new Swiper('.bestSellingSwiper', {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
-    freeMode: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  var swiper = new Swiper('.luxuryPanjabiSwiper,.premiumTshirtSwiper', {
     breakpoints: {
-      // Small mobile
       320: {
         slidesPerView: 2,
-        spaceBetween: 20,
+        spaceBetween: 10,
       },
-      // Tablets
-      640: {
+      480: {
         slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      640: {
+        slidesPerView: 3,
         spaceBetween: 20,
       },
-      // Desktops
       1024: {
         slidesPerView: 3,
         spaceBetween: 30,
       },
-      // Large screens
       1280: {
-        slidesPerView: 4,
-        spaceBetween: 25,
-      },
-    },
-  });
-  // New Arrivals Swiper
-  var swiper = new Swiper('.newArrivalsSwiper', {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    autoplay: {
-      delay: 2000,
-      disableOnInteraction: false,
-    },
-    freeMode: false,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      // Small mobile
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      // Tablets
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      // Desktops
-      1024: {
         slidesPerView: 3,
         spaceBetween: 30,
-      },
-      // Large screens
-      1280: {
-        slidesPerView: 4,
-        spaceBetween: 25,
-      },
-    },
-  });
-
-  // Premium Shirts Swiper
-  var swiper = new Swiper('.premiumShirtsSwiper', {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    autoplay: {
-      delay: 2300,
-      disableOnInteraction: false,
-    },
-    freeMode: false,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      // Small mobile
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      // Tablets
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      // Desktops
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
-      // Large screens
-      1280: {
-        slidesPerView: 4,
-        spaceBetween: 25,
-      },
-    },
-  });
-  var swiper = new Swiper('.luxuryPanjabiSwiper', {
-    slidesPerView: 4,
-    spaceBetween: 30,
-    autoplay: {
-      delay: 2300,
-      disableOnInteraction: false,
-    },
-    freeMode: false,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    breakpoints: {
-      // Small mobile
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      // Tablets
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      // Desktops
-      1024: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
-      // Large screens
-      1280: {
-        slidesPerView: 3,
-        spaceBetween: 20,
       },
     },
   });

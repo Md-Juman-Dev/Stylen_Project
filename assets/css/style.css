@@ -41,6 +41,7 @@ body {
   --background2: #46351f;
   --HoverBackground: #a98153;
   --shadow: #e4e0e1;
+  --pinck: #f3f3f3;
   --action: #9e1b1b;
   --primary: 'montserrat';
   --secondary: 'roboto';
@@ -249,7 +250,7 @@ header ul {
   position: relative;
 }
 
-.dropdown>a {
+.dropdown > a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -335,7 +336,7 @@ header ul {
 }
 
 .mobile_menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: var(--whiteColor);
@@ -366,7 +367,7 @@ header ul {
 }
 
 /* Show overlay when menu is active */
-.mobile_menu.active~.overlay-menu {
+.mobile_menu.active ~ .overlay-menu {
   display: block;
 }
 
@@ -838,7 +839,7 @@ header ul {
 
 /* Search Slider design */
 .search-slider {
-  position: absolute;
+  position: fixed;
   top: 56px;
   left: 50%;
   transform: translate(-50%, 40px);
@@ -1211,23 +1212,155 @@ header ul {
 /* Luxury Panjabi Design*/
 .luxury-panjabi {
   margin-top: 50px;
-  height: 100vh;
 }
-.luxury-panjabi .panjabi-box {
-  background-color: var(--shadow);
+.premium-tshirt {
+  margin-top: 50px;
+}
+
+.panjabi-box {
+  background-color: var(--pinck);
   border-radius: 5px;
 }
+.premium-tshirt .panjabi-box img,
+.premium-tshirt .panjabi-box img {
+  border-radius: 0 5px 5px 0;
+}
+.polo-shirt .panjabi-box img,
 .luxury-panjabi .panjabi-box img {
   border-radius: 5px 0 0 5px;
+}
+.premiumTshirtSwiper {
+  margin-left: 30px;
 }
 .luxuryPanjabiSwiper {
   margin-right: 30px;
 }
+.premiumTshirtSwiper .swiper-wrapper,
 .luxuryPanjabiSwiper .swiper-wrapper {
   margin-top: 23px;
 }
-.product_image {
-  overflow: hidden !important;
+/* Branding images */
+.brand-image {
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+}
+.brand-image .brand-image-box .col-lg-8 {
+  padding: 0;
+}
+
+/* Polo Shirt */
+.polo-shirt {
+  margin-top: 50px;
+}
+
+/* Rib Drop Shoulder  */
+.rib-drop-shoulder {
+  margin-top: 50px;
+}
+
+/* Review Section design */
+.review {
+  margin-top: 50px;
+}
+.review-title h5 {
+  font-family: var(--secondary);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--textColor);
+}
+.review-title p {
+  font-family: var(--primary);
+  font-size: 16px;
+  color: var(--textColor2);
+  line-height: 24px;
+}
+
+.reviewSwiper .swiper-slide {
+  width: 300px;
+  height: 400px;
+}
+.reviewSwiper .review-Card {
+  width: 100%;
+  height: 95%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: 25px;
+  margin: 10px 0;
+}
+.reviewSwiper .review-Card img {
+  width: 80px;
+  border-radius: 50%;
+}
+.reviewSwiper .review-Card .review-details h6 {
+  font-family: var(--third);
+  font-size: 18px;
+  color: var(--textColor);
+}
+.reviewSwiper .review-Card .review-details p {
+  font-family: var(--primary);
+  font-size: 14px;
+  color: var(--textColor2);
+  line-height: 22px;
+  text-align: start;
+}
+.reviewSwiper .review-Card .review-details p img {
+  width: 20px;
+  margin: 5px;
+}
+.reviewSwiper .review-Card .review-details ul {
+  margin: 10px 35px 10px 0;
+}
+.reviewSwiper .review-Card .review-details iconify-icon {
+  color: gold;
+  font-size: 20px;
+}
+/* Join Our Newsletter To Get Offers */
+.newsletter {
+  margin-top: 50px;
+}
+.newsletter-box {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  padding: 50px  ;
+}
+.newsletter-box .newsletter-title h5 {
+  font-family: var(--secondary);
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--textColor);
+  font-family: var(--secondary);
+}
+.newsletter-box .newsletter-title p {
+  font-family: var(--primary);
+  font-size: 16px;
+  color: var(--textColor2);
+  line-height: 24px;
+}
+.newsletter-box .newsletter-input input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--textColor2);
+  outline: none;
+  font-size: 16px;
+  font-family: var(--primary);
+}
+.newsletter-box .newsletter-input button {
+  background: #585858;
+  color: var(--whiteColor);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  font-family: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+}
+/* Footer secion design */
+footer {
+  width: 99vw;
+  height: 50vh;
 }
 /**---------------------- Shop Page ------------------- css */
 .shop {
@@ -1853,6 +1986,10 @@ input[type='checkbox']:checked {
 }
 .detail_bread-cumb {
   margin-top: 35px;
+}
+.premiumTshirtSwiper .product_image,
+.luxuryPanjabiSwiper .product_image {
+  height: 200px;
 }
 
 @media screen and (max-width: 991px) {
