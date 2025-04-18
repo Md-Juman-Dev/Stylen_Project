@@ -249,7 +249,7 @@ header ul {
   position: relative;
 }
 
-.dropdown > a {
+.dropdown>a {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -366,7 +366,7 @@ header ul {
 }
 
 /* Show overlay when menu is active */
-.mobile_menu.active ~ .overlay-menu {
+.mobile_menu.active~.overlay-menu {
   display: block;
 }
 
