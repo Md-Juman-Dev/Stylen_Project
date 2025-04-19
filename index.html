@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <!-- Header Start -->
     <header>
         <div class="container">
             <nav>
@@ -63,10 +64,12 @@
                                             </div>
                                         </a>
                                         <div class="icon-wrapper profile">
-                                            <span class="iconify-icon">
-                                                <iconify-icon icon="mdi:account-outline" width="26"
-                                                    height="26"></iconify-icon>
-                                            </span>
+                                            <a href="login.html">
+                                                <span class="iconify-icon">
+                                                    <iconify-icon icon="mdi:account-outline" width="26"
+                                                        height="26"></iconify-icon>
+                                                </span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -163,9 +166,11 @@
                             </div>
                             <!--* User Profile -->
                             <div class="user-icon profile">
-                                <span class="iconify-icon">
-                                    <iconify-icon icon="mdi:account-outline"></iconify-icon>
-                                </span>
+                                <a href="login.html">
+                                    <span class="iconify-icon">
+                                        <iconify-icon icon="mdi:account-outline"></iconify-icon>
+                                    </span>
+                                </a>
                             </div>
                             <!-- *Mobile menu Footer -->
                             <div class="buttom-menu">
@@ -290,22 +295,55 @@
                         </li>
                     </ul>
                 </div>
+
                 <!--* User Login popup -->
-                <div class="user-login-popup">
-                    <div class="overlay-login-popup"></div>
+                <!-- <div class="overlay-login-popup "></div>
+                <div class="user-login-popup activ">
                     <div class="user-icon-close">
                         <span class="iconify-icon">
                             <iconify-icon icon="material-symbols:close"></iconify-icon>
                         </span>
                     </div>
-                    <form action="" method="post">
-                        <h4 class="text-center my-3">Login Popup</h4>
-                        <div class="from-group">
-                            <input type="text" class="form-control shadow-none mb-3" name="email"
-                                placeholder="Email or Phone Number" />
+                    <h4 class="text-center">Register Ro LogIn</h4>
+                    <form action="" method="post" class="login-form">
+                        <h3 class="text-center">LogIn</h3>
+                        <!-- Email input 
+                        <div t class="form-outline mb-4">
+                            <label class="form-label" for="email">Email address</label>
+                            <input type="email" name="email" id="email" class="form-control" />
+                        </div>
+
+                        <!-- Password input 
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="password">Password</label>
+                            <input type="password" name="password" id="password" class="form-control" />
+                        </div>
+                        <div class="row ">
+                            <div class="col-6">
+                                <a href="#" class="forgot-password">Forgot Password?</a>
+                            </div>
+                            <div class="col-6 text-end">
+                                <a href="#" class="register">Create an account</a>
+                            </div>
+                        </div>
+                        <div class="login-btn text-center">
+                            <button type="submit">LogIn</button>
+                        </div>
+                        <hr>
+                        <div class="text-center">
+                            <p>Or</p>
+                        </div>
+                        <div class="social-login text-center">
+                            <button type="button" class="btn btn-primary btn-lg btn-block">
+                                <iconify-icon icon="fa-brands:facebook-f" class="me-2"></iconify-icon>
+                                Login with Facebook</button>
+                            <button type="button" class="btn btn-danger btn-lg btn-block">
+                                <iconify-icon icon="fa-brands:google" class="me-2"></iconify-icon>
+                                Login with Google</button>
                         </div>
                     </form>
-                </div>
+                </div> -->
+
                 <!--* wishlist Form mobile view -->
                 <div class="wishlist-overlay"></div>
                 <div class="wishlist-popup">
@@ -345,7 +383,8 @@
                         </div>
                     </div> -->
                 </div>
-                <!-- * Cart Form mobile view -->
+                <!--* Cart Form mobile view -->
+                <div class="cart-overlay"></div>
                 <div class="cart-box cart-icon d-lg-block d-none">
                     <div class="cart-top">
                         <span class="iconify-icon">
@@ -360,8 +399,7 @@
                         <span>990</span>
                     </div>
                 </div>
-                <div class="cart-overlay"></div>
-                <!-- Cart Slider -->
+                <!--* Cart Slider -->
                 <div class="cart-slider" id="cartSlider">
                     <div class="cart-header">
                         <span><i class="icon">🛍️</i> <strong>1 ITEM</strong></span>
@@ -420,7 +458,7 @@
             </nav>
         </div>
     </header>
-
+    <!-- main Start-->
     <main>
         <div class="messanger">
             <a href="https://www.facebook.com/messages/t/217616804773865" target="_blank">
@@ -2229,9 +2267,13 @@
                             <p>Subscribe to our newsletter and stay updated</p>
                         </div>
                         <div class="newsletter-input col-lg-6 col-12 text-lg-end text-center">
-                            <form action="" method="post">
-                                <input type="text" placeholder="Enter your email address">
-                                <button type="submit">Submit</button>
+                            <form action="" method="post" class="d-flex align-items-center justify-content-center">
+                                <div class="input-box">
+                                    <input type="text" placeholder="Enter your email address">
+                                </div>
+                                <div class="button-box">
+                                    <button type="submit">Submit</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -2239,12 +2281,12 @@
             </div>
         </section>
     </main>
-    <!-- Footer -->
+    <!-- Footer Start-->
     <footer>
         <div class="container">
-            <div class="row  justify-content-lg-between">
-                <div class="col-lg-3 col-6">
-                    <div class="logo text-start">
+            <div class="row  align-items-center">
+                <div class="col-lg-3 col-12 text-lg-start text-center">
+                    <div class="logo text-lg-start text-center">
                         <!-- <img src="./assets/images/logo.png" alt=""> -->
                         <h2>STYLEN</h2>
                     </div>
@@ -2263,9 +2305,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-6">
+                <div class="col-lg-3 col-6 text-lg-start text-center">
                     <h5>Information</h5>
-                    <ul class="footer-menu text-start">
+                    <ul class="footer-menu text-lg-start text-center">
                         <li><a href="#">About</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Shipping Information</a></li>
@@ -2274,7 +2316,7 @@
                         <li><a href="#">FAQs</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 col-6 contact-info">
+                <div class="col-lg-3 mt-lg-0 mt-3 col-6 contact-info text-lg-start text-center">
                     <h5>Contact Info</h5>
                     <p>Bashundhara City Shopping Complex,
                         Level-3, Block-D, Shop 45, 46,
@@ -2285,9 +2327,27 @@
                         01730-642262 | 01845-813237
                     </div>
                 </div>
-                <div class="col-lg-3 col-6">
-
+                <div class="col-lg-3 col-12 mt-lg-0 mt-3 d-lg-block d-none">
+                    <div class="footer-card">
+                        <iframe
+                            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnexgenmediaproduction&tabs=&width=300&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true"
+                            width="200" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                        </iframe>
+                    </div>
                 </div>
+            </div>
+            <div class="footer-bottom text-center ">
+                <p>Copyright &copy; 2025 <span>STYLEN</span> . All Rights Reserved. Developed by
+                    <a target="_blank" href="https://www.facebook.com/nexgenmediaproduction">NexGen</a>
+                </p>
+                <ul class="payment d-flex justify-content-center align-items-center">
+                    <li><img class="img-fluid" src="./assets/images/Payment/bkash-logo.png" alt=""></li>
+                    <li><img class="img-fluid" src="./assets/images/Payment/Nagad-logo.png" alt=""></li>
+                    <li><img class="img-fluid" src="./assets/images/Payment/rocket.png" alt=""></li>
+                    <li><img class="img-fluid" src="./assets/images/Payment/visa-logo.png" alt=""></li>
+                </ul>
             </div>
     </footer>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
@@ -2295,7 +2355,6 @@
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/main.js"></script>
-
 </body>
 
 </html>
