@@ -19,6 +19,8 @@ a {
 ul,
 ol {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .iconify-icon {
@@ -921,6 +923,17 @@ header ul {
 }
 
 /** ----------------Header design end----------------- */
+/* Messenger design */
+.messanger {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10000;
+}
+.messanger img {
+  width: 60px;
+  border-radius: 50%;
+}
 
 /* *swiper js start */
 .banner .swiper {
@@ -1321,7 +1334,7 @@ header ul {
 .newsletter-box {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
-  padding: 50px  ;
+  padding: 50px;
 }
 .newsletter-box .newsletter-title h5 {
   font-family: var(--secondary);
@@ -1359,8 +1372,94 @@ header ul {
 }
 /* Footer secion design */
 footer {
-  width: 99vw;
-  height: 50vh;
+  padding: 50px 0 70px 0;
+  margin: 50px 0;
+  background: var(--pinck);
+  background-color: var(--textColor);
+}
+footer .logo img {
+  width: 250px;
+}
+footer .logo h2 {
+  font-size: 30px;
+  font-family: var(--third);
+  color: var(--whiteColor);
+}
+footer .number p {
+  font-size: 25px;
+  font-family: var(--primary);
+  color: var(--HoverBackground);
+  font-weight: 500;
+  margin: 0;
+}
+footer .worktime p {
+  font-size: 15px;
+  font-family: var(--primary);
+  color: var(--whiteColor);
+  font-weight: 500;
+  margin: 0;
+}
+footer .worktime p span {
+  font-family: var(--primary);
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+footer .social-icon ul {
+  margin-top: 10px;
+  text-align: start;
+}
+footer .social-icon li {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--HoverBackground);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  margin: 0 10px;
+}
+footer .social-icon a iconify-icon {
+  font-size: 20px;
+  color: var(--HoverBackground);
+}
+
+footer h5 {
+  font-size: 23px;
+  font-family: var(--third);
+  color: var(--HoverBackground);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+footer .footer-menu ul {
+}
+footer .footer-menu li {
+  margin-bottom: 5px;
+}
+footer .footer-menu li a {
+  color: var(--whiteColor);
+  font-size: 16px;
+  font-family: var(--secondary);
+  font-weight: 400;
+  text-decoration: none;
+}
+footer .contact-info p {
+  font-size: 16px;
+  font-family: var(--primary);
+  color: var(--shadow);
+  font-weight: 400;
+}
+footer .contact-info span {
+  font-family: var(--primary);
+  color: var(--whiteColor);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+footer .contact-info .numbers {
+  font-size: 16px;
+  font-family: var(--primary);
+  color: var(--whiteColor);
+  font-weight: 400;
+  margin-top: 10px;
 }
 /**---------------------- Shop Page ------------------- css */
 .shop {
