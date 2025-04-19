@@ -28,9 +28,11 @@ $(document).ready(function () {
   // User Login Popup
   $('.profile').click(function () {
     $('.user-login-popup').addClass('active');
+    $('.overlay-login-popup').fadeIn();
   });
   $('.user-icon-close').click(function () {
     $('.user-login-popup').removeClass('active');
+    $('.overlay-login-popup').fadeOut();
   });
 
   // Wishlist Popup
@@ -161,7 +163,7 @@ $(document).ready(function () {
         spaceBetween: 15,
       },
       640: {
-        slidesPerView: 3,
+        slidesPerView: 2,
         spaceBetween: 20,
       },
       1024: {

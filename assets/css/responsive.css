@@ -395,4 +395,18 @@
   footer {
     padding-bottom: 40px;
   }
+  footer .number p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  footer .social-icon {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
+
+  /* Login page  */
+  .login-section {
+    margin: 100px 0 50px;
+  }
 }
