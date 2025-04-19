@@ -391,4 +391,8 @@
   .messanger {
     bottom: 55px;
   }
+
+  footer {
+    padding-bottom: 40px;
+  }
 }

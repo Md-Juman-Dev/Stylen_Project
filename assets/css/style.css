@@ -1321,7 +1321,7 @@ header ul {
   margin: 5px;
 }
 .reviewSwiper .review-Card .review-details ul {
-  margin: 10px 35px 10px 0;
+  margin: 10px;
 }
 .reviewSwiper .review-Card .review-details iconify-icon {
   color: gold;
@@ -1372,8 +1372,8 @@ header ul {
 }
 /* Footer secion design */
 footer {
-  padding: 50px 0 70px 0;
-  margin: 50px 0;
+  margin-top: 50px;
+  padding: 50px 0 0;
   background: var(--pinck);
   background-color: var(--textColor);
 }
@@ -1389,7 +1389,7 @@ footer .number p {
   font-size: 25px;
   font-family: var(--primary);
   color: var(--HoverBackground);
-  font-weight: 500;
+  font-weight: 700;
   margin: 0;
 }
 footer .worktime p {
@@ -1430,8 +1430,7 @@ footer h5 {
   text-transform: uppercase;
   margin-bottom: 15px;
 }
-footer .footer-menu ul {
-}
+
 footer .footer-menu li {
   margin-bottom: 5px;
 }
@@ -1460,6 +1459,32 @@ footer .contact-info .numbers {
   color: var(--whiteColor);
   font-weight: 400;
   margin-top: 10px;
+}
+footer .footer-bottom p {
+  font-size: 16px;
+  font-family: var(--primary);
+  color: var(--textColor2);
+  font-weight: 400;
+  margin-top: 30px;
+}
+footer .footer-bottom p span,
+footer .footer-bottom p a {
+  color: var(--whiteColor);
+  text-decoration: none;
+  font-weight: 500;
+}
+footer .payment li {
+  width: 60px;
+  height: 30px;
+  border: 1px solid var(--whiteColor);
+  background-color: var(--whiteColor);
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 5px;
+}
+footer .payment img {
+  width: 100%;
+  max-width: 40px;
 }
 /**---------------------- Shop Page ------------------- css */
 .shop {
