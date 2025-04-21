@@ -35,6 +35,22 @@ body {
   height: 100%;
   background-color: var(--whiteColor);
 }
+@media (prefers-color-scheme: dark) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  a,
+  li,
+  button,
+  div {
+    color: var(--whiteColor) !important;
+  }
+}
 
 :root {
   --whiteColor: #fff;

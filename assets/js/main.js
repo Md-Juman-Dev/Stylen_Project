@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  // dark mode default
+
   // Open menu
   // Mobile Menu
   $('.menu-icon').click(function () {
