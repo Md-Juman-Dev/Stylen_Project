@@ -501,4 +501,63 @@
   .login-section {
     margin: 100px 0 50px;
   }
+  /* profile page */
+  .sidebar {
+    display: none;
+  }
+  .responsive-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+  }
+  .responsive-nav .nav-link {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 0;
+    border-bottom: 3px solid transparent;
+  }
+  .responsive-nav .nav-link.active {
+    border-bottom: 3px solid #5e35b1;
+    background: #f7f7f7;
+    font-weight: 600;
+    color: #5e35b1;
+  }
+  .mobile-header {
+    background: linear-gradient(to bottom, #b08c5a, #ffffff);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+  }
+
+  .mobile-tab-btn {
+    background-color: white;
+    border-radius: 1rem;
+    padding: 10px 5px;
+    font-size: 12px;
+    color: #444;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: all 0.2s ease;
+    text-decoration: none;
+  }
+
+  .mobile-tab-btn.active {
+    background-color: #f0f0f0;
+    font-weight: 600;
+  }
+
+  .mobile-tab-btn iconify-icon {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+  }
+
+  .mobile-header a.text-white {
+    color: #000 !important;
+    text-decoration: none;
+    font-weight: 500;
+  }
 }

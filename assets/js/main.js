@@ -506,7 +506,10 @@ var relatedProductsSwiper = new Swiper(".relatedProductsSwiper", {
     $('#save-security-btn, #cancel-security-btn').addClass('d-none');
     alert('Security settings updated!');
   });
-
-
+ // MOBILE TAB TOGGLING
+ $('.mobile-tab-btn').on('click', function () {
+  $('.mobile-tab-btn').removeClass('active');
+  $(this).addClass('active');
+});
   
 });

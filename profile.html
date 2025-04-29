@@ -423,21 +423,55 @@
 
 
 
-        <div class="container mt-4">
+        <div class="container mt-5">
             <div class="row">
-                <!-- Sidebar -->
-                <div class="col-md-2 sidebar">
+
+                <!-- Mobile Header Section (Visible on Mobile Only) -->
+                <div class="col-12 d-md-none">
+                    <div class="mobile-header text-center p-3">
+                        <div class="text-white mb-3 fw-semibold">
+                            <iconify-icon icon="mdi:account-circle-outline" style="font-size: 28px;"></iconify-icon><br>
+                            Hello Safwan Shafi Afnan
+                        </div>
+
+                        <nav class="nav nav-tabs d-flex justify-content-between gap-2 mb-3" role="tablist">
+                            <a class="mobile-tab-btn nav-link active flex-fill" data-bs-toggle="tab" href="#profile" role="tab">
+                              <iconify-icon icon="mdi:account-outline"></iconify-icon><br>
+                              My Profile
+                            </a>
+                            <a class="mobile-tab-btn nav-link flex-fill" data-bs-toggle="tab" href="#orders" role="tab">
+                              <iconify-icon icon="mdi:file-document-outline"></iconify-icon><br>
+                              My Orders
+                            </a>
+                            <a class="mobile-tab-btn nav-link flex-fill" data-bs-toggle="tab" href="#reviews" role="tab">
+                              <iconify-icon icon="mdi:star-outline"></iconify-icon><br>
+                              My Reviews
+                            </a>
+                          </nav>
+                          
+
+                        <a href="#"
+                            class="text-white small d-inline-flex align-items-center justify-content-center gap-1">
+                            <iconify-icon icon="mdi:logout" style="font-size: 16px;"></iconify-icon> Logout
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <!-- Sidebar for Desktop -->
+                <div class="col-md-2 sidebar d-none d-md-block">
                     <div class="list-group list-group-flush" id="accountTabs" role="tablist">
-                        <a class="list-group-item list-group-item-action nav-link active" id="profile-tab"
-                            data-bs-toggle="list" href="#profile" role="tab">
+                        <a class="list-group-item list-group-item-action nav-link active" data-bs-toggle="list"
+                            href="#profile" role="tab">
                             <iconify-icon icon="mdi:account-outline"></iconify-icon> My Profile
                         </a>
-                        <a class="list-group-item list-group-item-action nav-link" id="orders-tab" data-bs-toggle="list"
-                            href="#orders" role="tab">
+                        <a class="list-group-item list-group-item-action nav-link" data-bs-toggle="list" href="#orders"
+                            role="tab">
                             <iconify-icon icon="mdi:file-document-outline"></iconify-icon> My Orders
                         </a>
-                        <a class="list-group-item list-group-item-action nav-link" id="reviews-tab"
-                            data-bs-toggle="list" href="#reviews" role="tab">
+                        <a class="list-group-item list-group-item-action nav-link" data-bs-toggle="list" href="#reviews"
+                            role="tab">
                             <iconify-icon icon="mdi:star-outline"></iconify-icon> My Reviews
                         </a>
                         <a class="list-group-item list-group-item-action nav-link text-danger" href="#">
@@ -447,38 +481,35 @@
                 </div>
 
                 <!-- Content -->
-                <div class="col-md-10">
+                <div class="col-12 col-md-10">
                     <div class="tab-content" id="accountTabContent">
                         <!-- Profile Tab -->
                         <div class="tab-pane fade show active" id="profile" role="tabpanel">
                             <h5 class="mb-4"><strong>Hello User</strong></h5>
 
                             <div class="profile-section" id="account-details-section">
-                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-3">
                                     <span class="section-title">Account Details</span>
-                                    <div>
+                                    <div class="mt-2 mt-sm-0">
                                         <button class="edit-btn" id="edit-account-btn">Edit</button>
                                         <button class="edit-btn d-none" id="save-account-btn">Save</button>
-                                        <button class="btn btn-link text-muted d-none"
-                                            id="cancel-account-btn">Cancel</button>
+                                        <button class="btn btn-link text-muted d-none" id="cancel-account-btn">Cancel</button>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-6 mb-3">
+                                    <div class="col-sm-12 col-md-6 mb-3">
                                         <label>Full Name</label>
                                         <input type="text" class="form-control account-input" value="User" disabled>
                                     </div>
-                                    <div class="col-md-6 mb-3">
+                                    <div class="col-sm-12 col-md-6 mb-3">
                                         <label>Phone Number</label>
-                                        <input type="text" class="form-control account-input"
-                                            placeholder="Enter your phone number" disabled>
+                                        <input type="text" class="form-control account-input" placeholder="Enter your phone number" disabled>
                                     </div>
-                                    <div class="col-md-6 mb-3">
+                                    <div class="col-sm-12 col-md-6 mb-3">
                                         <label>Email</label>
-                                        <input type="email" class="form-control account-input"
-                                            value="afnansafwanshafi@gmail.com" disabled>
+                                        <input type="email" class="form-control account-input" value="afnansafwanshafi@gmail.com" disabled>
                                     </div>
-                                    <div class="col-md-6 mb-3">
+                                    <div class="col-sm-12 col-md-6 mb-3">
                                         <label>Gender</label>
                                         <select class="form-select account-input" disabled>
                                             <option selected>Choose a Gender</option>
@@ -489,54 +520,47 @@
                                 </div>
                             </div>
 
-
                             <div class="profile-section" id="security-section">
-                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="d-flex flex-column flex-sm-row justify-content-between align-items-start align-items-sm-center mb-3">
                                     <span class="section-title">Security</span>
                                     <form action="">
-                                        <div>
+                                        <div class="mt-2 mt-sm-0">
                                             <button type="button" class="edit-btn" id="edit-security-btn">Edit</button>
-                                            <button type="submit" class="edit-btn d-none"
-                                                id="save-security-btn">Save</button>
-                                            <button type="button" class="btn btn-link text-muted d-none"
-                                                id="cancel-security-btn">Cancel</button>
+                                            <button type="submit" class="edit-btn d-none" id="save-security-btn">Save</button>
+                                            <button type="button" class="btn btn-link text-muted d-none" id="cancel-security-btn">Cancel</button>
                                         </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-6 mb-3">
+                                    <div class="col-sm-12 col-md-6 mb-3">
                                         <label>Enter Current Password</label>
-                                        <input name="" type="password" class="form-control security-input" value=""
-                                            disabled>
+                                        <input name="" type="password" class="form-control security-input" value="" disabled>
                                     </div>
-                                    <div class="col-md-6 mb-3">
+                                    <div class="col-sm-12 col-md-6 mb-3">
                                         <label>Enter New Password</label>
-                                        <input name="" type="password" class="form-control security-input" value=""
-                                            disabled>
+                                        <input name="" type="password" class="form-control security-input" value="" disabled>
                                     </div>
                                     </form>
                                 </div>
                             </div>
-
                         </div>
 
-                        <!-- Orders Tab -->
                         <!-- Orders Tab -->
                         <div class="tab-pane fade" id="orders" role="tabpanel">
                             <h5 class="mb-4"><strong>Hello User</strong></h5>
 
                             <!-- Summary Boxes -->
                             <div class="row mb-4">
-                                <div class="col-md-3">
+                                <div class="col-6 col-sm-6 col-md-3 mb-3">
                                     <div class="order-summary-box text-center p-3 rounded bg-light">
                                         <strong>01</strong><br>Total Orders
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-6 col-sm-6 col-md-3 mb-3">
                                     <div class="order-summary-box text-center p-3 rounded bg-light">
                                         <strong>01</strong><br>New Orders
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-6 col-sm-6 col-md-3 mb-3">
                                     <div class="order-summary-box text-center p-3 rounded bg-light">
                                         <strong>00</strong><br>Wish list
                                         <span class="iconify-icon">
@@ -544,7 +568,7 @@
                                         </span>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-6 col-sm-6 col-md-3 mb-3">
                                     <div class="order-summary-box text-center p-3 rounded bg-light">
                                         <strong>00</strong><br>Cart
                                         <span class="iconify-icon">
@@ -557,18 +581,20 @@
                             <!-- Status Buttons -->
                             <div class="mb-3">
                                 <h6>Recent Order List</h6>
-                                <button class="order-status-btn active" data-filter="all">All</button>
-                                <button class="order-status-btn" data-filter="new">New</button>
-                                <button class="order-status-btn" data-filter="shipped">Shipped</button>
-                                <button class="order-status-btn" data-filter="inprogress">In progress</button>
-                                <button class="order-status-btn" data-filter="delivered">Delivered</button>
-                                <button class="order-status-btn" data-filter="cancelled">Cancelled</button>
-                                <button class="order-status-btn" data-filter="returned">Returned</button>
-                              </div>
-                              
-                              <!-- Example Order Cards -->
-                              <div class="order-card" data-status="new">
-                                <div class="d-flex justify-content-between align-items-start">
+                                <div class="d-flex flex-wrap gap-2">
+                                    <button class="order-status-btn active" data-filter="all">All</button>
+                                    <button class="order-status-btn" data-filter="new">New</button>
+                                    <button class="order-status-btn" data-filter="shipped">Shipped</button>
+                                    <button class="order-status-btn" data-filter="inprogress">In progress</button>
+                                    <button class="order-status-btn" data-filter="delivered">Delivered</button>
+                                    <button class="order-status-btn" data-filter="cancelled">Cancelled</button>
+                                    <button class="order-status-btn" data-filter="returned">Returned</button>
+                                </div>
+                            </div>
+
+                            <!-- Example Order Cards -->
+                            <div class="order-card mb-4" data-status="new">
+                                <div class="d-flex flex-column flex-md-row justify-content-between align-items-start">
                                     <div>
                                         <div>
                                             <strong>Order ID 1746197014856</strong>
@@ -580,56 +606,46 @@
                                             <span class="ms-3">Status: <span class="text-success">New</span></span>
                                         </div>
                                     </div>
-                                    <div>
-                                        <span class="iconify-icon" data-icon="mdi:dots-vertical"
-                                            style="font-size: 20px; color: #777;"></span>
+                                    <div class="mt-2 mt-md-0">
+                                        <span class="iconify-icon" data-icon="mdi:dots-vertical" style="font-size: 20px; color: #777;"></span>
                                     </div>
                                 </div>
 
-                                <div class="d-flex mt-3 align-items-start border rounded p-2">
-                                    <img src="./assets/images/product/product1/product-1.jpg" alt="Product" class="me-3 rounded"
-                                        style="width: 80px; height: auto;">
+                                <div class="d-flex flex-column flex-md-row mt-3 align-items-start border rounded p-2">
+                                    <img src="./assets/images/product/product1/product-1.jpg" alt="Product" class="me-3 rounded mb-2 mb-md-0" style="width: 80px; height: auto;">
                                     <div class="flex-grow-1">
                                         <div class="fw-semibold">Premium Zipper Polo For Men | MFP-34</div>
-                                        <div class="d-flex align-items-center mt-1">
+                                        <div class="d-flex flex-wrap align-items-center mt-1">
                                             <span class="me-2">Rating:</span>
-                                            <span class="iconify-icon" data-icon="mdi:star"
-                                                style="color: #fbc02d; font-size: 18px;"></span>
-                                            <span class="iconify-icon" data-icon="mdi:star"
-                                                style="color: #fbc02d; font-size: 18px;"></span>
-                                            <span class="iconify-icon" data-icon="mdi:star"
-                                                style="color: #fbc02d; font-size: 18px;"></span>
-                                            <span class="iconify-icon" data-icon="mdi:star"
-                                                style="color: #fbc02d; font-size: 18px;"></span>
-                                            <span class="iconify-icon" data-icon="mdi:star"
-                                                style="color: #fbc02d; font-size: 18px;"></span>
+                                            <span class="iconify-icon" data-icon="mdi:star" style="color: #fbc02d; font-size: 18px;"></span>
+                                            <span class="iconify-icon" data-icon="mdi:star" style="color: #fbc02d; font-size: 18px;"></span>
+                                            <span class="iconify-icon" data-icon="mdi:star" style="color: #fbc02d; font-size: 18px;"></span>
+                                            <span class="iconify-icon" data-icon="mdi:star" style="color: #fbc02d; font-size: 18px;"></span>
+                                            <span class="iconify-icon" data-icon="mdi:star" style="color: #fbc02d; font-size: 18px;"></span>
                                             <span class="ms-2 text-muted">(4.8)</span>
                                             <button class="edit-btn ms-2">Rate Now</button>
                                         </div>
                                         <div class="text-muted mt-1 small">Color: Black &nbsp;&nbsp; Size: M</div>
                                     </div>
-                                    <div class="text-end" style="min-width: 90px;">
-                                        <div class="text-muted small">Price:</div>
-                                        <div class="fw-semibold text-secondary">BDT 690</div>
+                                    <div class="text-end mt-2 mt-md-0" style="min-width: 90px;">
+                                        <div class="text-muted small d-flex">Price:</div>
+                                        <div class="fw-semibold text-secondary d-flex">BDT 690</div>
                                     </div>
                                 </div>
-                              </div>
-                              
-                              <div class="order-card" data-status="shipped">
+                            </div>
+
+                            <div class="order-card mb-3" data-status="shipped">
                                 <strong>Order #2</strong> – Status: <span style="color:orange">Shipped</span>
-                              </div>
-                              
-                              <div class="order-card" data-status="cancelled">
+                            </div>
+
+                            <div class="order-card mb-3" data-status="cancelled">
                                 <strong>Order #3</strong> – Status: <span style="color:red">Cancelled</span>
-                              </div>
-                              
-                              <div class="order-card" data-status="delivered">
+                            </div>
+
+                            <div class="order-card mb-3" data-status="delivered">
                                 <strong>Order #4</strong> – Status: <span style="color:blue">Delivered</span>
-                              </div>
-                              
-
+                            </div>
                         </div>
-
 
                         <!-- Reviews Tab -->
                         <div class="tab-pane fade" id="reviews" role="tabpanel">
@@ -640,6 +656,7 @@
                 </div>
             </div>
         </div>
+
     </main>
     <footer>
         <div class="container">
@@ -715,30 +732,30 @@
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/main.js"></script>
     <script>
-          document.addEventListener('DOMContentLoaded', function () {
-    const filterButtons = document.querySelectorAll('.order-status-btn');
-    const orders = document.querySelectorAll('.order-card');
+        document.addEventListener('DOMContentLoaded', function () {
+            const filterButtons = document.querySelectorAll('.order-status-btn');
+            const orders = document.querySelectorAll('.order-card');
 
-    filterButtons.forEach(button => {
-      button.addEventListener('click', () => {
-        // Remove active from all
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active from all
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
 
-        const filter = button.getAttribute('data-filter');
+                    const filter = button.getAttribute('data-filter');
 
-        orders.forEach(order => {
-          const status = order.getAttribute('data-status');
+                    orders.forEach(order => {
+                        const status = order.getAttribute('data-status');
 
-          if (filter === 'all' || status === filter) {
-            order.style.display = 'block';
-          } else {
-            order.style.display = 'none';
-          }
+                        if (filter === 'all' || status === filter) {
+                            order.style.display = 'block';
+                        } else {
+                            order.style.display = 'none';
+                        }
+                    });
+                });
+            });
         });
-      });
-    });
-  });
     </script>
 
 </body>
