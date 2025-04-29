@@ -459,5 +459,54 @@ var relatedProductsSwiper = new Swiper(".relatedProductsSwiper", {
       showPage(currentPage);
     }
   });
+
+  $('#edit-account-btn').click(function () {
+    $('.account-input').prop('disabled', false);
+    $('#edit-account-btn').addClass('d-none');
+    $('#save-account-btn, #cancel-account-btn').removeClass('d-none');
+  });
+
+  $('#cancel-account-btn').click(function () {
+    $('.account-input').prop('disabled', true);
+    $('#edit-account-btn').removeClass('d-none');
+    $('#save-account-btn, #cancel-account-btn').addClass('d-none');
+  });
+
+  $('#save-account-btn').click(function () {
+    // You could do AJAX saving here
+    $('.account-input').prop('disabled', true);
+    $('#edit-account-btn').removeClass('d-none');
+    $('#save-account-btn, #cancel-account-btn').addClass('d-none');
+    alert('Changes saved successfully!');
+  });
+
+  $('#editAccountBtn').on('click', function () {
+    $(this).closest('.profile-section').find('input, select').prop('disabled', false);
+  });
+
+  $('#editPasswordBtn').on('click', function () {
+    $(this).closest('.profile-section').find('input').prop('disabled', false);
+  });
+  $('#edit-security-btn').click(function () {
+    $('.security-input').prop('disabled', false);
+    $('#edit-security-btn').addClass('d-none');
+    $('#save-security-btn, #cancel-security-btn').removeClass('d-none');
+  });
+
+  $('#cancel-security-btn').click(function () {
+    $('.security-input').prop('disabled', true);
+    $('#edit-security-btn').removeClass('d-none');
+    $('#save-security-btn, #cancel-security-btn').addClass('d-none');
+  });
+
+  $('#save-security-btn').click(function () {
+    // Insert actual save logic here
+    $('.security-input').prop('disabled', true);
+    $('#edit-security-btn').removeClass('d-none');
+    $('#save-security-btn, #cancel-security-btn').addClass('d-none');
+    alert('Security settings updated!');
+  });
+
+
   
 });

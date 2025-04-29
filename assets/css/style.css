@@ -2447,8 +2447,89 @@ input[type='checkbox']:checked {
     color: #fff;
     pointer-events: none;
   }
-  
 
+  /* profile page css */
+  .sidebar {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+  }
+
+  .sidebar .nav-link {
+    padding: 12px;
+    color: #333;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sidebar .nav-link.active, .sidebar .nav-link:hover {
+    background-color: #f7f7f7;
+    font-weight: 600;
+    color: var(--HoverBackground);
+  }
+
+  .profile-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .profile-section .section-title {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .edit-btn {
+    font-size: 14px;
+    color: #fff;
+    background-color: var(--background2);
+    border: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .form-control:disabled, .form-select:disabled {
+    background-color: #f3f3f3;
+  }
+  #cancel-account-btn{
+    outline: none;
+  }
+
+  .order-summary-box {
+    background-color: #f1f2f7;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .order-status-btn {
+    background-color: #f9f9f9;
+    border: none;
+    margin-right: 5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .order-status-btn.active {
+    background-color: #f0e6ff;
+    color: #5e35b1;
+    font-weight: bold;
+  }
+
+  .order-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background: #fff;
+  }
 @media screen and (max-width: 991px) {
   .zoom-result {
     display: none !important;
