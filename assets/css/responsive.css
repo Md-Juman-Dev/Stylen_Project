@@ -560,4 +560,13 @@
     text-decoration: none;
     font-weight: 500;
   }
+  /* order confirm page */
+  .download-invoice {
+    position: static;
+    margin-top: 15px;
+  }
+
+  .details-box {
+    padding: 20px 15px;
+  }
 }
