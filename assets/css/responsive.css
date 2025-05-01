@@ -22,10 +22,10 @@
   }
   #product_details .modal_product_size,
   #product_details .modal_product_color,
-  #product_details .product_details_modal{
+  #product_details .product_details_modal {
     margin-left: -25px;
   }
-  #product_details .product_details_modal h4{
+  #product_details .product_details_modal h4 {
     font-size: 24px;
   }
 
@@ -538,7 +538,7 @@
     padding: 10px 5px;
     font-size: 12px;
     color: #444;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     transition: all 0.2s ease;
     text-decoration: none;
   }
@@ -559,5 +559,10 @@
     color: #000 !important;
     text-decoration: none;
     font-weight: 500;
+  }
+
+  /* Checkout Page CSS */
+  .checkout {
+    margin-top: 80px;
   }
 }
