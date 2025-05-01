@@ -2599,8 +2599,5 @@ input[type='checkbox']:checked {
 .form-check-label {
   cursor: pointer;
 }
-@media screen and (max-width: 991px) {
-  .zoom-result {
-    display: none !important;
-  }
-}
+
+/**==============Cart Page CSS ===============*/
