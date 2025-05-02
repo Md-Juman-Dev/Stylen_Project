@@ -560,7 +560,7 @@
     text-decoration: none;
     font-weight: 500;
   }
-.zoom-result {
+  .zoom-result {
     display: none !important;
   }
   /* Checkout Page CSS */
@@ -616,5 +616,21 @@
     margin-top: 80px;
   }
   
+
+  /* cart page */
+  .quantity {
+      margin: 0;
+      margin-top: 15px;
+  }
+  .remove-item {
+    margin: 0px 0 0px 127px;
+  }
+  .product-item h5 {
+    font-size: 16px;
+  }
+  .product-item img {
+    width: 90px;
+    height: 90px;
+  }
 }
 
