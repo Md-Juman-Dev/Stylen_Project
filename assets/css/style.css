@@ -2534,6 +2534,326 @@ input[type='checkbox']:checked {
   background: #fff;
 }
 
+/* order confirm page */
+
+.confirmation-container {
+  max-width: 950px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: var(--third);
+}
+
+.confirmation-container h4 {
+  font-weight: 500;
+}
+
+.confirmation-container p {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.check-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #28a745;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px auto;
+}
+.bx-shadow {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  padding: 10px;
+}
+
+.details-box {
+  background: #fff;
+  /* box-shadow: 0 4px 15px rgba(0,0,0,0.08); */
+  border-radius: 6px;
+  padding: 20px 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tab-title {
+  font-weight: 600;
+  background: #f8f8f8;
+  padding: 10px 20px;
+  border-radius: 5px 5px 0 0;
+}
+
+.download-invoice {
+  position: absolute;
+  top: 33px;
+  right: 50px;
+  background: #a7805e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.row-divider {
+  border-right: 1px solid #ddd;
+}
+
+.details-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #777;
+}
+
+.details-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.order-summary p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.order-summary .text-end {
+  font-weight: 600;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.btn-custom {
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: none;
+  min-width: 160px;
+}
+
+.btn-view {
+  background: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-shop {
+  background: #a7805e;
+  color: #fff;
+}
+/* Fade-in & Scale-up animation for the confirmation container */
+@keyframes iosFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.confirmation-container {
+  max-width: 950px;
+  margin: 40px auto;
+  text-align: center;
+  font-family: var(--third);
+  animation: iosFadeIn 1s ease-out;
+}
+
+/* Slide-up animation for buttons */
+@keyframes iosButtonSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to buttons */
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  animation: iosButtonSlideUp 1s ease-out;
+  animation-delay: 0.5s; /* Delay for smooth sequential effect */
+}
+
+/* Optional: Add delay for each individual button for better animation sequence */
+.btn-custom {
+  animation: iosButtonSlideUp 1s ease-out;
+}
+
+.btn-view {
+  animation-delay: 0.6s;
+}
+
+.btn-shop {
+  animation-delay: 0.7s;
+}
+@media screen and (max-width: 991px) {
+  .zoom-result {
+    display: none !important;
+  }
+}
+.modal-body label {
+  margin-top: 10px;
+  font-weight: 500;
+}
+.rating-stars .iconify-icon {
+  font-size: 28px;
+  cursor: pointer;
+  color: #ccc;
+}
+.rating-stars .selected {
+  color: #ffc107;
+}
+.submit-btn {
+  background-color: #c9a55e;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin-top: 20px;
+}
+.rating-stars span iconify-icon {
+  font-size: 28px;
+  color: #ccc; /* Default gray */
+  cursor: pointer;
+}
+.rating-stars span.active iconify-icon {
+  color: #ffc107; /* Yellow when selected */
+}
+.review-stars .rating-number {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-left: 5px;
+}
+.pagination-nav {
+  margin-top: 30px;
+}
+
+.pagination .page-item .page-link {
+  color: #000;
+  border: 1px solid #ddd;
+  margin: 0 2px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 8px;
+  font-weight: 500;
+  outline: none !important; /* remove outline */
+  box-shadow: none !important; /* remove shadow */
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #a67c52; /* Active brown color */
+  color: #fff;
+  border-color: #a67c52;
+}
+
+.pagination .page-item.disabled .page-link {
+  background-color: #aaa;
+  border-color: #aaa;
+  color: #fff;
+  pointer-events: none;
+}
+
+/* profile page css */
+.sidebar {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.sidebar .nav-link {
+  padding: 12px;
+  color: #333;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+  background-color: #f7f7f7;
+  font-weight: 600;
+  color: var(--HoverBackground);
+}
+
+.profile-section {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.profile-section .section-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.edit-btn {
+  font-size: 14px;
+  color: #fff;
+  background-color: var(--background2);
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  background-color: #f3f3f3;
+}
+#cancel-account-btn {
+  outline: none;
+}
+
+.order-summary-box {
+  background-color: #f1f2f7;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+}
+
+.order-status-btn {
+  background-color: #f9f9f9;
+  border: none;
+  margin-right: 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.order-status-btn.active {
+  background-color: #f0e6ff;
+  color: #5e35b1;
+  font-weight: bold;
+}
+
+.order-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  background: #fff;
+}
+
 /**================= Checkout Page CSS ===================  */
 .head-line {
   margin: 20px 0;
