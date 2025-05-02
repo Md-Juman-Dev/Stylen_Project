@@ -2601,4 +2601,141 @@ input[type='checkbox']:checked {
 }
 
 /**==============Cart Page CSS ===============*/
+.order-details {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+}
+.order-details .items {
+  border-bottom: 2px solid #ccc;
+  padding: 10px;
+}
 
+.order-details .product-img {
+  width: 115px;
+  border-radius: 10px;
+}
+
+.order-details .name {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: var(--third);
+}
+.order-details .size {
+  font-size: 16px;
+  color: var(--textColor2);
+}
+.order-details .color {
+  font-size: 16px;
+  color: var(--textColor2);
+}
+.order-details .price {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: var(--third);
+  color: var(--textColor);
+}
+.quantity {
+  background: var(--textColor2);
+  padding: 5px;
+  border-radius: 20px;
+  width: 100px;
+}
+.quantity input {
+  width: 20px;
+}
+
+/* test */
+#cart-section {
+  padding: 40px 0;
+}
+
+.heading h3 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.product-detils p{
+    margin: 0;
+}
+.product-list,
+.order-summary {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.product-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.product-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.product-item h5 {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.remove-item {
+  border: none;
+  background: none;
+  color: red;
+  font-size: 1.2rem;
+      margin: 0 0 0px 50px;
+}
+
+.quantity {
+  background: #f3f3f3;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.quantity button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.quantity input {
+  width: 40px;
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-weight: bold;
+}
+
+.order-summary span {
+  font-weight: bold;
+}
+
+.order-summary .text-danger {
+  color: red;
+}
+
+.input-group input {
+  border-radius: 30px 0 0 30px !important;
+}
+
+.input-group .btn {
+  border-radius: 0 30px 30px 0 !important;
+}
+
+.btn-dark.btn-block {
+  border-radius: 40px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
