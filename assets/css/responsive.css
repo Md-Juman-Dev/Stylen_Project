@@ -560,11 +560,13 @@
     text-decoration: none;
     font-weight: 500;
   }
-.zoom-result {
+  .zoom-result {
     display: none !important;
   }
   /* Checkout Page CSS */
   .checkout {
     margin-top: 80px;
   }
+
+  /* cart page */
 }
