@@ -5,9 +5,9 @@
     height: 100%;
     position: relative;
   }
-.cart-slider{
+  .cart-slider {
     max-width: 330px;
-}
+  }
   .product_image {
     position: relative;
     height: 180px;
@@ -569,7 +569,7 @@
   .checkout {
     margin-top: 80px;
   }
-  #order_card{
+  #order_card {
     margin-top: 80px;
   }
   /* contact us page */
@@ -614,17 +614,19 @@
     margin-left: 0;
     margin-top: 5px;
   }
-  #contact_us_page{
+  #contact_us_page {
     margin-top: 80px;
   }
-  
 
   /* cart page */
-  .quantity {
-      margin: 0;
-      margin-top: 15px;
+  #cart-section {
+    margin-top: 30px;
   }
- #cart-section .remove-item {
+  .quantity {
+    margin: 0;
+    margin-top: 15px;
+  }
+  #cart-section .remove-item {
     margin: 0px 0 0px 127px;
   }
   .product-item h5 {
@@ -635,4 +637,3 @@
     height: 90px;
   }
 }
-
