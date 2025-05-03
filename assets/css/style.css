@@ -705,10 +705,10 @@ header ul {
   top: 0;
   right: 0;
   width: 100%;
-  max-width: 340px;
+  max-width: 430px;
   height: 100vh;
   background: var(--whiteColor);
-  z-index: 9999;
+  z-index: 99999;
   display: flex;
   flex-direction: column;
   border-radius: 15px 0 0 15px;
@@ -753,7 +753,7 @@ header ul {
 .cart-body {
   flex: 1;
   overflow-y: auto;
-  padding: 15px;
+  padding: 5px;
 }
 
 .cart-item {
@@ -791,47 +791,45 @@ header ul {
 
 /* Image */
 .product-img img {
-  width: 60px;
-  height: 60px;
+  width: 100%;
+  height: 100%;
   border-radius: 5px;
   object-fit: cover;
 }
 
 /* Info */
-.product-info {
+.cart-product-info .product-info {
   flex: 1;
 }
 
-.top-row {
+.cart-product-info .top-row {
   display: flex;
   justify-content: space-between;
   font-size: 14px;
   font-weight: bold;
 }
 
-.remove-item {
+.cart-product-info .remove-item {
   color: var(--action);
   cursor: pointer;
 }
 
-.code,
-.size {
+.cart-product-info .code,
+.cart-product-info .size {
   font-size: 13px;
   color: var(--textColor2);
-  margin-top: 2px;
 }
 
-.price {
+.cart-product-info .price {
   font-size: 14px;
-  margin-top: 5px;
 }
 
-.price .new {
+.cart-product-info .price .new {
   font-weight: bold;
   color: var(--textColor2);
 }
 
-.price .old {
+.cart-product-info .price .old {
   text-decoration: line-through;
   color: var(--textColor2);
   margin-left: 6px;
@@ -964,7 +962,7 @@ header ul {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 10000;
+  z-index: 999;
 }
 
 .messanger img {
@@ -3051,7 +3049,7 @@ input[type='checkbox']:checked {
   color: var(--textColor);
 }
 
-.title {
+.checkout-title {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -3180,7 +3178,7 @@ input[type='checkbox']:checked {
   font-size: 0.9rem;
 }
 
-.product-img {
+#order_card .product-img {
   width: 60px;
   height: 60px;
   object-fit: cover;
@@ -3280,34 +3278,34 @@ h5.text-center::after {
   font-size: 24px;
 }
 /**==============Cart Page CSS ===============*/
-.quantity {
+#cart-section .quantity {
   background: var(--textColor2);
   padding: 5px;
   border-radius: 20px;
   width: 100px;
 }
-.quantity input {
+#cart-section .quantity input {
   width: 20px;
 }
 #cart-section {
   padding: 40px 0;
 }
 
-.heading h3 {
+#cart-section .heading h3 {
   font-size: 2.5rem;
   font-weight: 900;
 }
-.product-detils p {
+#cart-section .product-detils p {
   margin: 0;
 }
-.product-list,
-.order-summary {
+#cart-section .product-list,
+#cart-section .order-summary {
   border: 1px solid #ddd;
   border-radius: 20px;
   padding: 20px;
 }
 
-.product-item {
+#cart-section .product-item {
   display: flex;
   align-items: center;
   margin-bottom: 25px;
@@ -3315,7 +3313,7 @@ h5.text-center::after {
   padding-bottom: 20px;
 }
 
-.product-item img {
+#cart-section .product-item img {
   width: 100px;
   height: 100px;
   object-fit: cover;
@@ -3323,12 +3321,12 @@ h5.text-center::after {
   margin-right: 20px;
 }
 
-.product-item h5 {
+#cart-section .product-item h5 {
   font-weight: 700;
   font-size: 20px;
 }
 
-.remove-item {
+#cart-section .remove-item {
   border: none;
   background: none;
   color: red;
@@ -3336,7 +3334,7 @@ h5.text-center::after {
   margin: 0 0 0px 50px;
 }
 
-.quantity {
+#cart-section .quantity {
   background: #f3f3f3;
   border-radius: 999px;
   display: flex;
@@ -3345,7 +3343,7 @@ h5.text-center::after {
   margin-top: 10px;
 }
 
-.quantity button {
+#cart-section .quantity button {
   background: none;
   border: none;
   font-size: 1.2rem;
@@ -3353,7 +3351,7 @@ h5.text-center::after {
   margin-bottom: 6px;
 }
 
-.quantity input {
+#cart-section .quantity input {
   width: 40px;
   border: none;
   background: transparent;
@@ -3361,15 +3359,15 @@ h5.text-center::after {
   font-weight: bold;
 }
 
-.order-summary span {
+#cart-section .order-summary span {
   font-weight: bold;
 }
 
-.order-summary .text-danger {
+#cart-section .order-summary .text-danger {
   color: red;
 }
 
-.input-group input {
+#cart-section .input-group input {
   border-radius: 30px 0 0 30px !important;
 }
 

@@ -5,7 +5,9 @@
     height: 100%;
     position: relative;
   }
-
+.cart-slider{
+    max-width: 330px;
+}
   .product_image {
     position: relative;
     height: 180px;
@@ -622,7 +624,7 @@
       margin: 0;
       margin-top: 15px;
   }
-  .remove-item {
+ #cart-section .remove-item {
     margin: 0px 0 0px 127px;
   }
   .product-item h5 {
