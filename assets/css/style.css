@@ -3386,4 +3386,103 @@ h5.text-center::after {
   font-weight: bold;
   background: var(--HoverBackground);
   border: none;
+  width: 100%;
+  height: 50px;
+}
+
+/* checkout page design 2 */
+#checkout-section {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+}
+
+.checkout-box {
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.checkout-title {
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.form-control {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.order-summary {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background: #fff;
+}
+
+.order-summary h4 {
+  font-size: 16px;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.summary-table {
+  width: 100%;
+}
+
+.summary-table td {
+  padding: 8px 0;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.product-img {
+  width: 50px;
+  height: auto;
+}
+
+.qty-control {
+  display: inline-flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.qty-control button {
+  padding: 0 10px;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+}
+
+.qty-control input {
+  width: 40px;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.place-order-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.place-order-btn:hover {
+  background-color: #333;
+}
+
+.note {
+  font-size: 13px;
+  color: #666;
+  margin-top: 10px;
+}
+.payment-methods label {
+  font-size: 14px;
+  margin-right: 15px;
 }

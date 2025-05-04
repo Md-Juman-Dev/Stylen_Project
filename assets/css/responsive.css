@@ -636,4 +636,10 @@
     width: 90px;
     height: 90px;
   }
+  .btn-dark.btn-block {
+    width: 100%;
+  }
+  #checkout-section{
+    margin-top: 80px;
+  }
 }
